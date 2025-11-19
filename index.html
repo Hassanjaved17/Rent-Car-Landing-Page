@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RENTCARS - Car Rental Landing Page</title>
+    <title>RENTCARS - Car Rental</title>
+    <!-- Fav-icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/fav-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/fav-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/fav-icon.png">
+
 
     <!-- Google Font Link -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +27,7 @@
         <!-- Navbar Start-->
         <nav class="nav-container">
             <a class="logo">
-                <img src="./images/logos.png" alt="logo">
+                <img src="./icons/logos.png" alt="logo">
             </a>
             <div class="nav-links">
                 <a href="#renter">Become a renter</a>
@@ -34,9 +39,10 @@
                 <button class="btn-signin">Sign in</button>
                 <button class="btn-signup">Sign up</button>
             </div>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
-        <!-- Navbar End-->
+    <!-- Navbar End-->
 
     <!-- Hero Section Start -->
     <section class="hero">
@@ -48,13 +54,13 @@
                         Find, book and rent a car
                         <span class="highlight-wrapper">
                             <span class="highlight">Easily</span>
-                            <img src="./images/tild-underline.png" alt="underline" class="underline-img">
+                            <img src="./icons/tild-underline.png" alt="underline" class="underline-img">
                         </span>
                     </h1>
                     <p>Get a car wherever and whenever you need it with your iOS or Android device.</p>
                     <div class="app-badges">
-                        <img src="./images/googleStore-icon-sm.png" alt="Google Play">
-                        <img src="./images/appleStore-icon-sm.png" alt="Apple Store">
+                        <img src="./icons/googleStore-icon-sm.png" alt="Google Play">
+                        <img src="./icons/appleStore-icon-sm.png" alt="Apple Store">
                     </div>
                 </div>
 
@@ -67,21 +73,21 @@
             <!-- Search Box -->
             <div class="search-box">
                 <div class="search-field location">
-                    <img src="./images/location.png" alt="location icon">
+                    <img src="./icons/location.png" alt="location icon">
                     <div>
                         <p class="label">Location</p>
                         <p class="value">Search your location</p>
                     </div>
                 </div>
                 <div class="search-field">
-                    <img src="./images/calendar.png" alt="calendar icon">
+                    <img src="./icons/calendar.png" alt="calendar icon">
                     <div>
                         <p class="label">Pickup date</p>
                         <p class="value">Tue 15 Feb, 09:00</p>
                     </div>
                 </div>
                 <div class="search-field">
-                    <img src="./images/calendar.png" alt="calendar icon">
+                    <img src="./icons/calendar.png" alt="calendar icon">
                     <div>
                         <p class="label">Return date</p>
                         <p class="value">Thu 16 Feb, 11:00</p>
@@ -103,37 +109,47 @@
         <div class="steps">
             <div class="step">
                 <div class="icon-box">
-                    <img src="./images/location.jpeg" alt="">
+                    <img src="./icons/location.jpeg" alt="">
                 </div>
                 <h3>Choose location</h3>
                 <p>Choose your and find your best car</p>
             </div>
             <div class="step">
                 <div class="icon-box">
-                    <img src="./images/calander.jpeg" alt="">
+                    <img src="./icons/calander.jpeg" alt="">
                 </div>
                 <h3>Pick-up date</h3>
                 <p>Select your pick up date and time to book your car</p>
             </div>
             <div class="step">
                 <div class="icon-box">
-                    <img src="./images/car-icon.jpeg" alt="">
+                    <img src="./icons/car-icon.jpeg" alt="">
                 </div>
                 <h3>Book your car</h3>
                 <p>Book your car and we will deliver it directly to you</p>
             </div>
         </div>
 
-        <!-- Brand Logos -->
-        <div class="brands">
-            <img src="./images/honda-icon.png" alt="Honda" class="brand-logo">
-            <img src="./images/jaguar-icon.png" alt="Jaguar" class="brand-logo">
-            <img src="./images/nissan-icon.png" alt="Nissan" class="brand-logo">
-            <img src="./images/volvo-icon.jpeg" alt="Volvo" class="brand-logo">
-            <img src="./images/audi-icon.png" alt="Audi" class="brand-logo">
-            <img src="./images/ac-car.png" alt="Ac" class="brand-logo">
 
+        <div class="brands-wrapper">
+            <div class="brands-slider">
+                <img src="./icons/honda-icon.png" alt="Honda" class="brand-logo">
+                <img src="./icons/jaguar-icon.png" alt="Jaguar" class="brand-logo">
+                <img src="./icons/nissan-icon.png" alt="Nissan" class="brand-logo">
+                <img src="./icons/volvo-icon.jpeg" alt="Volvo" class="brand-logo">
+                <img src="./icons/audi-icon.png" alt="Audi" class="brand-logo">
+                <img src="./icons/ac-car.png" alt="Ac" class="brand-logo">
+
+                <!-- duplicate logos for seamless loop -->
+                <img src="./icons/honda-icon.png" alt="Honda" class="brand-logo">
+                <img src="./icons/jaguar-icon.png" alt="Jaguar" class="brand-logo">
+                <img src="./icons/nissan-icon.png" alt="Nissan" class="brand-logo">
+                <img src="./icons/volvo-icon.jpeg" alt="Volvo" class="brand-logo">
+                <img src="./icons/audi-icon.png" alt="Audi" class="brand-logo">
+                <img src="./icons/ac-car.png" alt="Ac" class="brand-logo">
+            </div>
         </div>
+
     </section>
     <!-- How It Works Section End -->
 
@@ -150,7 +166,7 @@
             <div class="features">
                 <div class="feature">
                     <div class="feature-icon">
-                        <img src="./images/price.png" alt="">
+                        <img src="./icons/price.png" alt="">
                     </div>
                     <div>
                         <h4>Best price guaranteed</h4>
@@ -160,7 +176,7 @@
 
                 <div class="feature">
                     <div class="feature-icon">
-                        <img src="./images/driver.png" alt="">
+                        <img src="./icons/driver.png" alt="driver icon">
                     </div>
                     <div>
                         <h4>Experience driver</h4>
@@ -170,7 +186,7 @@
 
                 <div class="feature">
                     <div class="feature-icon">
-                        <img src="./images/time.png" alt="">
+                        <img src="./icons/time.png" alt="hour icon">
                     </div>
                     <div>
                         <h4>24 hour car delivery</h4>
@@ -180,7 +196,7 @@
 
                 <div class="feature">
                     <div class="feature-icon">
-                        <img src="./images/message.png" alt="">
+                        <img src="./icons/message.png" alt="">
                     </div>
                     <div>
                         <h4>24/7 technical support</h4>
@@ -204,13 +220,13 @@
             <!-- Car Card 1 -->
             <div class="car-card">
                 <div class="car-image-container">
-                    <img src="./images/image 12.png" alt="Jaguar XE L P250">
+                    <img src="./images/card1-img.png" alt="Jaguar XE L P250">
                 </div>
                 <div class="car-details">
                     <div class="car-info">
                         <h3>Jaguar XE L P250</h3>
                         <div class="rating">
-                            <img src="./images/star.png" alt="">
+                            <img src="./icons/star.png" alt="">
                             <span><strong>4.8</strong> <span class="review-count">(2.436 reviews)</span></span>
                         </div>
                     </div>
@@ -243,13 +259,13 @@
             <!-- Car Card 2 -->
             <div class="car-card">
                 <div class="car-image-container">
-                    <img src="./images/Audi 1 (1).png" alt="Audi R8">
+                    <img src="./images/card2-img.png" alt="Audi R8">
                 </div>
                 <div class="car-details">
                     <div class="car-info">
                         <h3>Audi R8</h3>
                         <div class="rating">
-                            <img src="./images/star.png" alt="">
+                            <img src="./icons/star.png" alt="">
                             <span><strong>4.6</strong> <span class="review-count">(1.936 reviews)</span></span>
                         </div>
                     </div>
@@ -279,13 +295,13 @@
             <!-- Car Card 3 -->
             <div class="car-card">
                 <div class="car-image-container">
-                    <img src="./images/image 13.png" alt="BMW M3">
+                    <img src="./images/card3-img.png" alt="BMW M3">
                 </div>
                 <div class="car-details">
                     <div class="car-info">
                         <h3>BMW M3</h3>
                         <div class="rating">
-                            <img src="./images/star.png" alt="">
+                            <img src="./icons/star.png" alt="">
                             <span><strong>4.9</strong> <span class="review-count">(3.236 reviews)</span></span>
                         </div>
                     </div>
@@ -315,13 +331,13 @@
             <!-- Car Card 4 -->
             <div class="car-card">
                 <div class="car-image-container">
-                    <img src="./images/image 11.png" alt="Lamborghini Huracan">
+                    <img src="./images/card4-img.png" alt="Lamborghini Huracan">
                 </div>
                 <div class="car-details">
                     <div class="car-info">
                         <h3>Lamborghini Huracan</h3>
                         <div class="rating">
-                            <img src="./images/star.png" alt="">
+                            <img src="./icons/star.png" alt="">
                             <span><strong>5.0</strong> <span class="review-count">(2.945 reviews)</span></span>
                         </div>
                     </div>
@@ -366,27 +382,7 @@
             <div class="testimonial-card">
                 <div class="rating-large">
                     <span class="score">5.0</span>
-                    <div class="stars">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                    </div>
-                    <p class="overall">Overall rating</p>
-                </div>
-            </div>
-            <div class="testimonial-card testimonial-content">
-                <img src="./images/testimonial-img1.png" alt="Customer" class="testimonial-avatar">
-                <div class="testimonial-text">
-                    <p>"I feel very secure when using caretall's services. Your customer care team is very
-                        enthusiastic
-                        and the driver is always on time."</p>
-                    <p class="author"><strong>Charlie Johnson</strong><br><span>Last updated 3 mins ago</span></p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="rating-large">
-                    <span class="score">6.0</span>
+                    <span class="rating-text">Stars</span>
                     <div class="stars">
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
@@ -395,17 +391,40 @@
                         <span><i class="fas fa-star"></i></span>
 
                     </div>
-                    <p class="overall">Overall rating</p>
+                    <div class="testimonial-text">
+                        <p>"I feel very secure when using caretall's services. Your customer care team is very
+                            enthusiastic
+                            and the driver is always on time."</p>
+                        <p class="author"><strong>Charlie Johnson</strong><br><span>Last updated 3 mins ago</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-card testimonial-content">
-                <img src="./images/testimonial-img2.png" alt="Customer" class="testimonial-avatar">
-                <div class="testimonial-text">
-                    <p>"I feel very secure when using caretall's services. Your customer care team is very
-                        enthusiastic
-                        and the driver is always on time."</p>
-                    <p class="author"><strong>Sarah Mitchell</strong><br><span>Last updated 5 mins ago</span></p>
+            <div class=" testimonial-image">
+                <img src="./images/testimonial-img1.png" alt="Customer" class="testimonial-avatar">
+            </div>
+            <div class="testimonial-card">
+                <div class="rating-large">
+                    <span class="score">6.0</span>
+                    <span class="rating-text">Stars</span>
+                    <div class="stars">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"I feel very secure when using caretall's services. Your customer care team is very
+                            enthusiastic
+                            and the driver is always on time."</p>
+                        <p class="author"><strong>Sarah Mitchell</strong><br><span>Last updated 5 mins ago</span></p>
+                    </div>
                 </div>
+            </div>
+            <div class="testimonial-image">
+                <img src="./images/testimonial-img2.png" alt="Customer" class="testimonial-avatar">
             </div>
         </div>
     </section>
@@ -419,16 +438,13 @@
             <h2>Download Rentcars<br>App for <span class="highlight">FREE</span></h2>
             <p>For faster, easier booking and exclusive deals.</p>
             <div class="app-badges">
-                <img src="./images/googleStore-icon-lg.png" alt="Google Play">
-                <img src="./images/appleStore-icon-lg.png" alt="Apple Store">
+                <img src="./icons/googleStore-icon-lg.png" alt="Google Play">
+                <img src="./icons/appleStore-icon-lg.png" alt="Apple Store">
             </div>
         </div>
 
         <div class="phone-mockup">
-            <!-- App screen behind frame -->
-            <img src="images/iPhone 14 Pro Space Black Mockup label.png" alt="App Preview" class="phone-screen">
-            <!-- Transparent phone frame on top -->
-            <img src="./images/phone-frame.png" alt="Phone Frame" class="phone-frame">
+            <img src="./images/iPhone 14 Pro Space Black Mockup.png" alt="App Preview" class="phone-screen">
         </div>
     </section>
     <!-- Download App Section End -->
@@ -441,7 +457,7 @@
             <div class="footer-column">
                 <div class="logo">
                     <a class="footer-logo">
-                        <img src="./images/footer-logo.png" alt="logo">
+                        <img src="./icons/footer-logo.png" alt="logo">
                     </a>
 
                 </div>
@@ -498,8 +514,14 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Copyright 2023 &copy; RENTCARS. All rights reserved</p>
+            <p>
+                Copyright 2025 &copy; <strong>RENTCARS</strong>. All rights reserved
+                <span class="separator">|</span>
+                Made With <i class="fa-solid fa-heart"></i>
+                By <a href="https://hassanjaveds.netlify.app/" target="_blank">Hassan Javed</a>
+            </p>
         </div>
+
     </footer>
     <!-- Footer Start -->
 
