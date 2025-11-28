@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- AOS Cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,10 +32,10 @@
                 <img src="./icons/logos.png" alt="logo">
             </a>
             <div class="nav-links">
-                <a href="#renter">Become a renter</a>
-                <a href="#deals">Rental deals</a>
-                <a href="#how">How it work</a>
-                <a href="#why">Why choose us</a>
+                <a data-aos="zoom-in" data-aos-delay="100" href="#renter">Become a renter</a>
+                <a data-aos="zoom-in" data-aos-delay="300" href="#deals">Rental deals</a>
+                <a data-aos="zoom-in" data-aos-delay="500" href="#how">How it work</a>
+                <a data-aos="zoom-in" data-aos-delay="700" href="#why">Why choose us</a>
             </div>
             <div class="nav-actions">
                 <button class="btn-signin">Sign in</button>
@@ -49,7 +51,7 @@
         <div class="container">
             <div class="hero-content">
                 <!-- Left Text Content -->
-                <div class="hero-text">
+                <div class="hero-text" data-aos="fade-right">
                     <h1>
                         Find, book and rent a car
                         <span class="highlight-wrapper">
@@ -59,19 +61,19 @@
                     </h1>
                     <p>Get a car wherever and whenever you need it with your iOS or Android device.</p>
                     <div class="app-badges">
-                        <img src="./icons/googleStore-icon-sm.png" alt="Google Play">
-                        <img src="./icons/appleStore-icon-sm.png" alt="Apple Store">
+                        <img src="./icons/googleStore-icon-sm.png" alt="Google Play" data-aos="zoom-in"  data-aos-delay="100">
+                        <img src="./icons/appleStore-icon-sm.png" alt="Apple Store" data-aos="zoom-in"  data-aos-delay="300">
                     </div>
                 </div>
 
                 <!-- Right Image -->
-                <div class="hero-image">
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
                     <img src="./images/hero-img.png" alt="Blue Porsche" class="car-image">
                 </div>
             </div>
 
             <!-- Search Box -->
-            <div class="search-box">
+            <div class="search-box" data-aos="fade-up" data-aos-delay="300">
                 <div class="search-field location">
                     <img src="./icons/location.png" alt="location icon">
                     <div>
@@ -102,26 +104,26 @@
 
     <!-- How It Works Section Start -->
     <section class="how-it-works">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <span class="badge">HOW IT WORK</span>
             <h2>Rent with following 3 working steps</h2>
         </div>
         <div class="steps">
-            <div class="step">
+            <div class="step" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
                     <img src="./icons/location.jpeg" alt="">
                 </div>
                 <h3>Choose location</h3>
                 <p>Choose your and find your best car</p>
             </div>
-            <div class="step">
+            <div class="step" data-aos="zoom-in" data-aos-delay="200">
                 <div class="icon-box">
                     <img src="./icons/calander.jpeg" alt="">
                 </div>
                 <h3>Pick-up date</h3>
                 <p>Select your pick up date and time to book your car</p>
             </div>
-            <div class="step">
+            <div class="step" data-aos="zoom-in" data-aos-delay="300">
                 <div class="icon-box">
                     <img src="./icons/car-icon.jpeg" alt="">
                 </div>
@@ -131,7 +133,7 @@
         </div>
 
 
-        <div class="brands-wrapper">
+        <div class="brands-wrapper" data-aos="fade-up" data-aos-delay="400">
             <div class="brands-slider">
                 <img src="./icons/honda-icon.png" alt="Honda" class="brand-logo">
                 <img src="./icons/jaguar-icon.png" alt="Jaguar" class="brand-logo">
@@ -156,15 +158,15 @@
 
     <!-- Why Choose Us Section Start -->
     <section class="why-choose-us">
-        <div class="car-showcase">
+        <div class="car-showcase" data-aos="fade-right">
             <img src="./images/Audi 1.png" alt="Audi" class="showcase-car">
         </div>
-        <div class="why-content">
+        <div class="why-content" data-aos="fade-left">
             <span class="badge">WHY CHOOSE US</span>
             <h2>We offer the best experience with our rental deals</h2>
 
             <div class="features">
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">
                         <img src="./icons/price.png" alt="">
                     </div>
@@ -174,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
                         <img src="./icons/driver.png" alt="driver icon">
                     </div>
@@ -184,7 +186,7 @@
                     </div>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">
                         <img src="./icons/time.png" alt="hour icon">
                     </div>
@@ -194,7 +196,7 @@
                     </div>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon">
                         <img src="./icons/message.png" alt="">
                     </div>
@@ -211,14 +213,14 @@
 
     <!-- Popular Cars Section Start -->
     <section class="popular-cars">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <span class="badge">POPULAR RENTAL DEALS</span>
             <h2>Most popular cars rental deals</h2>
         </div>
 
         <div class="car-grid">
             <!-- Car Card 1 -->
-            <div class="car-card">
+            <div class="car-card" data-aos="zoom-in" data-aos-delay="100">
                 <div class="car-image-container">
                     <img src="./images/card1-img.png" alt="Jaguar XE L P250">
                 </div>
@@ -257,7 +259,7 @@
             </div>
 
             <!-- Car Card 2 -->
-            <div class="car-card">
+            <div class="car-card" data-aos="zoom-in" data-aos-delay="200">
                 <div class="car-image-container">
                     <img src="./images/card2-img.png" alt="Audi R8">
                 </div>
@@ -293,7 +295,7 @@
             </div>
 
             <!-- Car Card 3 -->
-            <div class="car-card">
+            <div class="car-card" data-aos="zoom-in" data-aos-delay="300">
                 <div class="car-image-container">
                     <img src="./images/card3-img.png" alt="BMW M3">
                 </div>
@@ -329,7 +331,7 @@
             </div>
 
             <!-- Car Card 4 -->
-            <div class="car-card">
+            <div class="car-card" data-aos="zoom-in" data-aos-delay="400">
                 <div class="car-image-container">
                     <img src="./images/card4-img.png" alt="Lamborghini Huracan">
                 </div>
@@ -365,7 +367,7 @@
             </div>
         </div>
 
-        <div class="view-all">
+        <div class="view-all" data-aos="fade-up" data-aos-delay="500">
             <a href="#all-cars">Show all vehicles <i class="fas fa-arrow-right"></i> </a>
         </div>
     </section>
@@ -374,12 +376,12 @@
 
     <!-- Testimonials Section Start -->
     <section class="testimonials">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <span class="badge">TESTIMONIALS</span>
             <h2>What peole say about us?</h2>
         </div>
         <div class="testimonial-grid">
-            <div class="testimonial-card">
+            <div class="testimonial-card"  data-aos="fade-right" >
                 <div class="rating-large">
                     <span class="score">5.0</span>
                     <span class="rating-text">Stars</span>
@@ -400,10 +402,10 @@
                     </div>
                 </div>
             </div>
-            <div class=" testimonial-image">
+            <div class=" testimonial-image" data-aos="zoom-in">
                 <img src="./images/testimonial-img1.png" alt="Customer" class="testimonial-avatar">
-            </div>
-            <div class="testimonial-card">
+            </div>         
+            <div class="testimonial-card" data-aos="fade-left">
                 <div class="rating-large">
                     <span class="score">6.0</span>
                     <span class="rating-text">Stars</span>
@@ -423,7 +425,7 @@
                     </div>
                 </div>
             </div>
-            <div class="testimonial-image">
+            <div class="testimonial-image" data-aos="zoom-in" data-aos-delay="200">
                 <img src="./images/testimonial-img2.png" alt="Customer" class="testimonial-avatar">
             </div>
         </div>
@@ -433,18 +435,18 @@
 
     <!-- Download App Section Start -->
     <section class="download-app">
-        <div class="app-content">
+        <div class="app-content" data-aos="fade-right">
             <span class="badge">DOWNLOAD</span>
             <h2>Download Rentcars<br>App for <span class="highlight">FREE</span></h2>
             <p>For faster, easier booking and exclusive deals.</p>
             <div class="app-badges">
-                <img src="./icons/googleStore-icon-lg.png" alt="Google Play">
-                <img src="./icons/appleStore-icon-lg.png" alt="Apple Store">
+                <img src="./icons/googleStore-icon-lg.png" alt="Google Play" data-aos="zoom-in"  data-aos-delay="100">
+                <img src="./icons/appleStore-icon-lg.png" alt="Apple Store" data-aos="zoom-in"  data-aos-delay="300">
             </div>
         </div>
 
         <div class="phone-mockup">
-            <img src="./images/iPhone 14 Pro Space Black Mockup.png" alt="App Preview" class="phone-screen">
+            <img src="./images/iPhone 14 Pro Space Black Mockup.png" alt="App Preview" class="phone-screen" data-aos="fade-left" data-aos-delay="100">
         </div>
     </section>
     <!-- Download App Section End -->
@@ -454,7 +456,7 @@
     <!-- Footer Start -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-column">
+            <div class="footer-column" data-aos="fade-right" data-aos-delay="100">
                 <div class="logo">
                     <a class="footer-logo">
                         <img src="./icons/footer-logo.png" alt="logo">
@@ -462,13 +464,13 @@
 
                 </div>
                 <address>
-                    <p><i class="fas fa-location-dot"></i> 25566 Hc 1, Glenallen, Alaska, 99588, USA</p>
-                    <p><i class="fas fa-phone"></i> +603 4784 273 12</p>
-                    <p><i class="fas fa-envelope"></i> rentcars@gmail.com</p>
+                    <p><i class="fas fa-location-dot" data-aos="zoom-in" data-aos-delay="200"></i> 25566 Hc 1, Glenallen, Alaska, 99588, USA</p>
+                    <p><i class="fas fa-phone" data-aos="zoom-in" data-aos-delay="400"></i> +603 4784 273 12</p>
+                    <p><i class="fas fa-envelope" data-aos="zoom-in" data-aos-delay="600"></i> rentcars@gmail.com</p>
                 </address>
 
             </div>
-            <div class="footer-column">
+            <div class="footer-column" data-aos="fade-right" data-aos-delay="200">
                 <h4>Our Product</h4>
                 <ul>
                     <li><a href="#career">Career</a></li>
@@ -478,7 +480,7 @@
                     <li><a href="#priceline">Priceline</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+            <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
                 <h4>Resources</h4>
                 <ul>
                     <li><a href="#download">Download</a></li>
@@ -488,7 +490,7 @@
                     <li><a href="#events">Cruises</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+            <div class="footer-column" data-aos="fade-left" data-aos-delay="400">
                 <h4>About Rentcars</h4>
                 <ul>
                     <li><a href="#why">Why choose us</a></li>
@@ -498,17 +500,16 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Follow Us</h4>
+                <h4 data-aos="fade-left" data-aos-delay="500">Follow Us</h4>
                 <div class="social-links">
-                    <a href="#facebook" aria-label="Facebook">
+                    <a href="#facebook" aria-label="Facebook" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#instagram" aria-label="Instagram">
+                    <a href="#instagram" aria-label="Instagram" data-aos="zoom-in" data-aos-delay="300">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#twitter" aria-label="Twitter">
+                    <a href="#twitter" aria-label="Twitter" data-aos="zoom-in" data-aos-delay="500">
                         <i class="fa-brands fa-twitter"></i>
-
                     </a>
                 </div>
             </div>
@@ -524,6 +525,16 @@
 
     </footer>
     <!-- Footer Start -->
+
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
 </body>
 

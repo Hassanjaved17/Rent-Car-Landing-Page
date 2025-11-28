@@ -1240,10 +1240,7 @@ header .header {
     }
 
     .download-app {
-        /* padding: 40px 24px; */
         padding-bottom: 180px;
-        /* controlled bottom gap */
-
     }
 
     .app-content h2 {
@@ -1258,6 +1255,7 @@ header .header {
         flex-direction: column;
         width: 50%;
         margin: 0 auto;
+        gap: 10px;
     }
 
     .badge {
@@ -1266,11 +1264,9 @@ header .header {
     }
 
     .phone-mockup {
-        width: 250px;
-        transform: translateY(35px);
-        left: 0;
-        right: 0;
-        margin: auto;
+        width: 200px;
+        transform: none !important;  
+        margin-top: 20px;            
     }
 
 
