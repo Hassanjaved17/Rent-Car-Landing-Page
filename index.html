@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <!-- AOS Cdn -->
+    <!-- AOS Cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="styles.css">
@@ -26,24 +26,43 @@
 <body>
     <!-- Header Section -->
     <header class="header">
-        <!-- Navbar Start-->
         <nav class="nav-container">
-            <a class="logo">
+            <a href="./index.html" class="logo">
                 <img src="./icons/logos.png" alt="logo">
             </a>
+
             <div class="nav-links">
-                <a data-aos="zoom-in" data-aos-delay="100" href="#renter">Become a renter</a>
-                <a data-aos="zoom-in" data-aos-delay="300" href="#deals">Rental deals</a>
-                <a data-aos="zoom-in" data-aos-delay="500" href="#how">How it work</a>
-                <a data-aos="zoom-in" data-aos-delay="700" href="#why">Why choose us</a>
+                <a href="#renter" data-aos="zoom-in" data-aos-delay="100">Become a renter</a>
+                <a href="#deals" data-aos="zoom-in" data-aos-delay="300">Rental deals</a>
+                <a href="#how" data-aos="zoom-in" data-aos-delay="500">How it works</a>
+                <a href="#why" data-aos="zoom-in" data-aos-delay="700">Why choose us</a>
             </div>
+
             <div class="nav-actions">
                 <button class="btn-signin">Sign in</button>
                 <button class="btn-signup">Sign up</button>
             </div>
-            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+
+            <!-- Mobile toggle button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
+
+        <!-- Mobile dropdown menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#renter">Become a renter</a>
+            <a href="#deals">Rental deals</a>
+            <a href="#how">How it works</a>
+            <a href="#why">Why choose us</a>
+
+            <div class="mobile-nav-actions">
+                <button class="btn-signin">Sign in</button>
+                <button class="btn-signup">Sign up</button>
+            </div>
+        </div>
     </header>
+    <!-- Header Section End-->
     <!-- Navbar End-->
 
     <!-- Hero Section Start -->
@@ -61,8 +80,10 @@
                     </h1>
                     <p>Get a car wherever and whenever you need it with your iOS or Android device.</p>
                     <div class="app-badges">
-                        <img src="./icons/googleStore-icon-sm.png" alt="Google Play" data-aos="zoom-in"  data-aos-delay="100">
-                        <img src="./icons/appleStore-icon-sm.png" alt="Apple Store" data-aos="zoom-in"  data-aos-delay="300">
+                        <img src="./icons/googleStore-icon-sm.png" alt="Google Play" data-aos="zoom-in"
+                            data-aos-delay="100">
+                        <img src="./icons/appleStore-icon-sm.png" alt="Apple Store" data-aos="zoom-in"
+                            data-aos-delay="300">
                     </div>
                 </div>
 
@@ -381,7 +402,7 @@
             <h2>What peole say about us?</h2>
         </div>
         <div class="testimonial-grid">
-            <div class="testimonial-card"  data-aos="fade-right" >
+            <div class="testimonial-card" data-aos="fade-right">
                 <div class="rating-large">
                     <span class="score">5.0</span>
                     <span class="rating-text">Stars</span>
@@ -404,7 +425,7 @@
             </div>
             <div class=" testimonial-image" data-aos="zoom-in">
                 <img src="./images/testimonial-img1.png" alt="Customer" class="testimonial-avatar">
-            </div>         
+            </div>
             <div class="testimonial-card" data-aos="fade-left">
                 <div class="rating-large">
                     <span class="score">6.0</span>
@@ -440,13 +461,14 @@
             <h2>Download Rentcars<br>App for <span class="highlight">FREE</span></h2>
             <p>For faster, easier booking and exclusive deals.</p>
             <div class="app-badges">
-                <img src="./icons/googleStore-icon-lg.png" alt="Google Play" data-aos="zoom-in"  data-aos-delay="100">
-                <img src="./icons/appleStore-icon-lg.png" alt="Apple Store" data-aos="zoom-in"  data-aos-delay="300">
+                <img src="./icons/googleStore-icon-lg.png" alt="Google Play" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./icons/appleStore-icon-lg.png" alt="Apple Store" data-aos="zoom-in" data-aos-delay="300">
             </div>
         </div>
 
         <div class="phone-mockup">
-            <img src="./images/iPhone 14 Pro Space Black Mockup.png" alt="App Preview" class="phone-screen" data-aos="fade-left" data-aos-delay="100">
+            <img src="./images/iPhone 14 Pro Space Black Mockup.png" alt="App Preview" class="phone-screen"
+                data-aos="fade-left" data-aos-delay="100">
         </div>
     </section>
     <!-- Download App Section End -->
@@ -458,13 +480,14 @@
         <div class="footer-content">
             <div class="footer-column" data-aos="fade-right" data-aos-delay="100">
                 <div class="logo">
-                    <a class="footer-logo">
+                    <a href="./index.html" class="footer-logo">
                         <img src="./icons/footer-logo.png" alt="logo">
                     </a>
 
                 </div>
                 <address>
-                    <p><i class="fas fa-location-dot" data-aos="zoom-in" data-aos-delay="200"></i> 25566 Hc 1, Glenallen, Alaska, 99588, USA</p>
+                    <p><i class="fas fa-location-dot" data-aos="zoom-in" data-aos-delay="200"></i> 25566 Hc 1,
+                        Glenallen, Alaska, 99588, USA</p>
                     <p><i class="fas fa-phone" data-aos="zoom-in" data-aos-delay="400"></i> +603 4784 273 12</p>
                     <p><i class="fas fa-envelope" data-aos="zoom-in" data-aos-delay="600"></i> rentcars@gmail.com</p>
                 </address>
@@ -528,7 +551,24 @@
 
 
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS For Mobile Toggle Menu -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+        document.querySelectorAll('#mobileNav a').forEach(anchor => {
+            anchor.addEventListener('click', function () {
+                document.getElementById('mobileNav').classList.remove('active');
+            });
+        });
+
+    </script>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,

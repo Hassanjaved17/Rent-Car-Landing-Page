@@ -34,7 +34,7 @@ body {
 }
 
 /* Header & Navbar Styles Start*/
-header .header {
+.header {
     background: var(--white-color);
     position: relative;
     overflow: visible;
@@ -145,8 +145,50 @@ header .header {
     color: var(--black);
 }
 
-/* Header & Navbar Styles End*/
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    z-index: 999;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    transition: all 0.3s ease;
+}
 
+.mobile-nav a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--d-grey);
+    text-decoration: none;
+    position: relative;
+}
+
+.mobile-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.mobile-nav a:hover::after {
+    width: 100%;
+}
+
+.mobile-nav a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Header & Navbar Styles End*/
 
 /* Hero Section Start*/
 .container {
@@ -1146,6 +1188,29 @@ header .header {
         display: none;
     }
 
+    .mobile-nav {
+        display: none;
+        transition: 0.3s ease;
+    }
+
+    .mobile-nav.active {
+        display: flex;
+    }
+
+    .mobile-nav-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .mobile-nav .mobile-nav-actions .btn-signin,
+    .mobile-nav .mobile-nav-actions .btn-signup {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
     .hero {
         padding: 10px 0 20px;
     }
@@ -1265,8 +1330,8 @@ header .header {
 
     .phone-mockup {
         width: 200px;
-        transform: none !important;  
-        margin-top: 20px;            
+        transform: none !important;
+        margin-top: 20px;
     }
 
 
