@@ -32,6 +32,19 @@ body {
     overflow-x: hidden;
     color: var(--text-color);
 }
+/* top scroll bar */
+#scroll-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(to right, #4cafef, var(--primary-color));
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: width 0.2s ease-out;
+}
 
 /* Header & Navbar Styles Start*/
 .header {
@@ -1073,6 +1086,31 @@ body {
 
 /* Footer End*/
 
+/* Sticky Book Now Button start */
+#book-now-btn {
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 22px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.35s ease-out, transform 0.2s, box-shadow 0.2s;
+    z-index: 9999;
+}
+
+#book-now-btn.show {
+    bottom: 20px;
+}
+
+#book-now-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+/* Sticky Book Now Button end */
 
 /* Responsiive Media Queries */
 @media (max-width: 1200px) {
