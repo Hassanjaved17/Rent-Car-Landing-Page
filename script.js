@@ -35,6 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 bookNowBtn.classList.remove('show');
             }
         });
+//  Smooth scroll to booking section
+    bookNowBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (bookingSection) {
+            bookingSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
     }
 
     // =======================
